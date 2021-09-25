@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 854px;
+    background-image: url('https://swall.teahub.io/photos/small/245-2452031_seiya-os-cavaleiros-do-zodaco.jpg');
+    background-color: #000000;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 20vh;
+    color: white;
+}
+
+div {
+    margin: 0;
+}
+
+button {
+    padding: .8rem 1.5rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+.container .game-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: cyan;
+}
+
+.container .game-title img{
+    width: 280px;
+    margin-right: 20px;
+}
+
+.placar {
+    font-size: 2rem;
+    margin: 0;
+    color: yellow;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.wrapper button {
+    height: fit-content;
+}
+
+.wrapper #resultado {
+    margin-top: .5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid black;
+    background: black;
+    visibility: hidden;
+}
+
+.wrapper .opcoes {
+    color: yellow;
+    margin: 0rem .6rem;
+}
+
+.wrapper .opcoes button {
+    margin: .5rem 0rem;
+}
+
+
+.carta-jogador, .carta-maquina {
+    min-width: 250px;
+    width: 300px;
+    height: 540px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background: #29528E;
+    visibility: hidden;
+    position: relative;
+}
+
+
+.carta-cavaleiro {
+    height: 60%;
+    position: relative;
+}
+
+.carta-cavaleiro img{
+    max-height: 100%;
+    min-width: 100%;
+}
+
+.carta-cavaleiro h2 {
+    position: absolute;
+    bottom: 0px;
+    color: yellow;
+    left: 0;
+    right: 0;
+    margin: 0;
+    background: linear-gradient(to right, red, red, white);
+}
+
+.carta-opcoes {
+    text-align: left;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.carta-opcoes input {
+    margin-right: 10px;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+}
+
+.carta-opcoes label {
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.carta-opcoes p {
+    margin: 0;
+    text-align: center;
+}
+
+.btnMusic {
+    padding: .6rem;
+    margin: .8rem .3rem;
+    cursor: pointer;
+}
+
+.btnMusic svg {
+    cursor: pointer;
+}
+.music {
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (max-width: 763px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .wrapper .opcoes {
+        order: 1;
+    }
+    .wrapper .carta-jogador {
+        order: 2;
+    }
+    .wrapper .carta-maquina {
+        order: 3;
+    }
+    .wrapper #resultado {
+        margin-bottom: 1rem;
+    }
+    .opcoes {
+        display: flex;
+        flex-direction: column;
+    }
+    .opcoes h2 {
+        order: 4;
+    }
+}

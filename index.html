@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/PNG" href="https://seeklogo.com/images/C/cavaleiros-do-zodiaco-logo-7BEBD54081-seeklogo.com.png">
+    <title>SuperTrunfo - Cavaleiros do Zodiaco</title>
+</head>
+<body>
+    <div class="container">
+        <div class="game-title">
+            <img src="https://seeklogo.com/images/C/cavaleiros-do-zodiaco-logo-7BEBD54081-seeklogo.com.png" alt="">
+            <h1>Super trunfo - Cavaleiros do Zodiaco</h1>
+        </div>
+        <h2 class="placar">Placar: Jogador 0 x 0 Maquina</h2>
+        <div class="music">
+            <button class="btnMusic" onclick="playMusic()" id="music"><i data-feather="play"></i></button>
+            <button class="btnMusic" onclick="pauseMusic()"><i data-feather="pause"></i></button>
+        </div>
+        <button onclick="sortearCarta()" id="btnSortear">Sortear carta</button>
+        <div class="wrapper">
+            <div class="carta-jogador card" id="carta-jogador">
+                <div class="carta-cavaleiro">
+                    <img src="https://i.pinimg.com/236x/12/a9/4c/12a94cb3fa0cd1666d576eaff3505177.jpg" alt="">
+                    <h2>Seya</h2>
+                </div>
+            </div>
+            <div class="opcoes">
+                <h2>Escolha seu atributo na sua carta</h2>
+                <button class="button-jogar" id="btnJogar" onclick="jogar()" disabled="false">Jogar</button>
+                <button class="button-rodada" id="btnRodada" onclick="proximaRodada()" disabled="false">Próxima Rodada/Embaralhar</button>
+                <button disabled='false' id="btnResetar" onclick="resetar()">Resetar</button>
+                <div id="resultado"></div>
+            </div>
+            <div class="carta-maquina card" id="carta-maquina">
+                <div class="carta-cavaleiro">
+                        <img src="https://i.pinimg.com/236x/12/a9/4c/12a94cb3fa0cd1666d576eaff3505177.jpg" alt="">
+                        <h2>Seya</h2>
+                </div>
+                <div class="carta-estatisticas">
+                </div>
+            </div>
+        </div>
+    </div>
+<audio src="assets/Musica Seya.mp3"></audio>
+<script>
+    feather.replace()
+  </script>
+    <script src="scripts.js"></script>
+</body>
+</html>
